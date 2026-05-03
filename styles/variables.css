@@ -1,8 +1,8 @@
 :root {
   --basic-font: 'Inter-Variable';
   --pixel-font: 'PressStart2P';
-  --slim-font-weight: 400;
-  --bold-font-weight: 700;
+  --slim-font-weight: 410;
+  --bold-font-weight: 715;
   --background-color: #FFF;
   --text-color: #000;
   --element-width: clamp(23.188rem, 16.035rem + 30.516vw, 43.5rem);
@@ -31,4 +31,4 @@
       #e7e7e7 0.01%,
       #1a1a1a 100%
     );
-}/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+}
