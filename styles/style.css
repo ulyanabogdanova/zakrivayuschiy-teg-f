@@ -40,70 +40,6 @@
   margin-bottom: 20px;
 }
 
-.header__theme-menu {
-  padding-left: 20px;
-}
-
-.theme-menu__list {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  position: relative;
-}
-
-.theme-menu__item {
-  font-family: var(--pixel-font), sans-serif;
-}
-
-.theme-menu__button {
-  text-transform: uppercase;
-  border: 0;
-  background-color: inherit;
-  cursor: pointer;
-  font-size: 14px;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.theme-menu__button:disabled::before {
-  content: "▶";
-  position: absolute;
-  animation: arrow 0.5s infinite ease-in-out alternate;
-  opacity: 0.6;
-}
-
-.theme-menu__button:focus-visible::after {
-  opacity: 0.6;
-  width: 100%;
-}
-
-.theme-menu__button:focus-visible {
-  outline: none;
-  opacity: 0.6;
-}
-
-.theme-menu__button:hover {
-  opacity: 0.6;
-}
-
-.theme-menu__button:focus {
-  outline: none;
-}
-
-.theme-menu__button:disabled {
-  opacity: 0.6;
-  pointer-events: none;
-}
-
-.theme-menu__button::after {
-  content: "";
-  display: block;
-  background-color: var(--text-color);
-  opacity: 0;
-  height: 2px;
-  width: 0;
-  transition: width 0.3s ease, opacity 0.3s ease;
-}
 
 .main {
   margin-top: 100px;
@@ -164,7 +100,6 @@
 .card-img-container {
   border-top: 2px solid var(--text-color);
   border-bottom: 2px solid var(--text-color);
-  overflow: hidden;
   max-height: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
 }
 
@@ -299,7 +234,7 @@
 }
 
 .footer-button {
-  margin-top: 60px;
+  margin-top: 50px;
   padding: 15px 20px;
   display: flex;
   justify-content: center;
@@ -425,15 +360,13 @@
 
 .like-icon.is-liked .heart-icon {
   animation: heart-scale 0.3s ease-in 0.1s 1 both;
+  transform-origin: center;
 }
 
 .like-icon.is-liked .sparks {
   animation: sparks-appear 0.3s ease-in 0.3s 1 both;
 }
 
-.card:last-child .card__button-section {
-  margin-top: 40px;
-}
 
 @media (width <= 375px) {
   .header__name {
@@ -442,7 +375,7 @@
 
   .footer-button {
     flex-direction: column;
-    margin-top: 45px;
+    margin-top: 75px;
   }
 
   .footer-image {
@@ -454,7 +387,4 @@
     gap: 45px;
   }
 
-  .card:last-child .card-text-section {
-    gap: 40px;
-  }
 }
